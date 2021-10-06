@@ -1,0 +1,21 @@
+@startuml "Professor (High dependencies)"
+
+class Professor {
+    - student: Student
+    + teach(course): None
+}
+
+class Student {
+    ...
+    + remember()
+}
+
+class Course {
+    ...
+    + get_knowledge()
+}
+
+Professor -left-> Student
+Professor ..> Course
+
+@enduml

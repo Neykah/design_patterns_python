@@ -1,0 +1,50 @@
+@startuml Airport
+
+class Airport {
+    ...
+    + accept(vehicle: FlyingTransport)
+}
+
+interface FlyingTransport {
+    + fly(origin, destination, passengers)
+}
+
+class Helicopter implements FlyingTransport {
+    ...
+    + fly(origin, destination, passengers)
+}
+
+class Airplane implements FlyingTransport {
+    ...
+    + fly(origin, destination, passengers)
+}
+
+class DomesticatedGryphon implements FlyingTransport {
+    ...
+    + fly(origin, destination, passengers)
+}
+note on link
+    Arrows with empty
+    triangle heads and
+    dashed lines indicate
+    that classes implement
+    an interface.
+end note
+
+Airport --> FlyingTransport
+note on link
+    Simple arrows
+    indicate that one
+    class uses another
+    (more on this type
+    of arrow later).
+end note
+
+note left of FlyingTransport
+    Interfaces in UML
+    look almost like
+    classes, but only
+    have methods.
+end note
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml Polymorphism
+abstract class Animal {
+    ...
+    + {abstract} makeSound(): None
+}
+
+class Cat extends Animal {
+    ...
+    + makeSound(): None
+}
+note left of Cat::makeSound
+    print("Meow!")
+end note
+
+class Dog extends Animal {
+    ...
+    + makeSound(): None
+}
+note right of Dog::makeSound
+    print("Bark!")
+end note
+@enduml
