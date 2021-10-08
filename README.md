@@ -6,6 +6,8 @@ The Python implementation of each example is an original work, distributed under
 Feel free to re-use them for any work or educational purpose.
 
 ## Slides and video recordings for each session
+This section is private and belongs to [Ridge-i, Inc](https://ridge-i.com/)
+Feel free to contact us to request access.
 
 - [Session 1](https://drive.google.com/drive/u/0/folders/1hqt7IeOiNBN0u5FzCChu5RyoTgkCLYgI)
 - Session 2...
