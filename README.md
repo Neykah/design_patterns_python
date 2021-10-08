@@ -5,6 +5,10 @@ These lectures cover the book [Dive Into Design Patterns](https://www.goodreads.
 The Python implementation of each example is an original work, distributed under MIT license.
 Feel free to re-use them for any work or educational purpose.
 
+## Code for each session
+- Session 1: The code is not well organized, but disseminated in `various_modules`.
+- Session 2: [design_principles.ipynb](design_principles.ipynb)
+
 ## Slides and video recordings for each session
 This section is private and belongs to [Ridge-i, Inc](https://ridge-i.com/). Feel free to contact us to request access.
 
