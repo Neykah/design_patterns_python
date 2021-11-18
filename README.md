@@ -8,12 +8,14 @@ Feel free to re-use them for any work or educational purpose.
 ## Code for each session
 - Session 1: The code is not well organized, but disseminated in `various_modules`.
 - Session 2: [design_principles.ipynb](design_principles.ipynb)
+- Session 3: [solid_principles.ipynb](solid_principles.ipynb)
 
 ## Slides and video recordings for each session
 This section is private and belongs to [Ridge-i, Inc](https://ridge-i.com/). Feel free to contact us to request access.
 
 - [Session 1](https://drive.google.com/drive/u/0/folders/1hqt7IeOiNBN0u5FzCChu5RyoTgkCLYgI)
-- Session 2...
+- [Session 2](https://drive.google.com/drive/folders/1AjN8cvnwELr1TIZMt8Sw8SuKzv9TFkXY?usp=sharing)
+- [Session 3](https://drive.google.com/drive/folders/1uxbyc0FnAWW_Blhe8yb1FZMcPTrwbgql?usp=sharing)
 
 ## Author
 
