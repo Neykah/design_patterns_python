@@ -1,0 +1,62 @@
+@startuml OriginalReadOnlyDocument
+!theme crt-amber
+
+class Document {
+    - data: str
+    - filename: str
+    + open()
+    + save()
+}
+
+class ReadOnlyDocument extends Document {
+    + save()
+}
+
+class Project {
+    - documents: list[Document]
+    + open_all()
+    + save_all()
+}
+
+Project *-left-> Document
+
+' note right of ReadOnlyDocument::save()
+'     raise ReadOnlyException("Unable to save read-only file.")
+' end note
+
+' note right of Project::open_all
+'     for doc in self.documents:
+'         doc.open()
+' end note
+
+' note right of Project::save_all
+'     for doc in self.documents:
+'         if not isinstance(doc, ReadOnlyDocument):
+'             doc.save()
+' end note
+
+@enduml
+
+@startuml AfterRefactorReadOnlyDocument
+!theme crt-amber
+
+class Document {
+    - data: str
+    - filename: str
+    + open()
+}
+
+class WritableDocument extends Document {
+    + save()
+}
+
+class Project {
+    - read_only_docs
+    - writable_docs
+    + open_all()
+    + save_all()
+}
+
+Project *-left-> Document
+
+@enduml

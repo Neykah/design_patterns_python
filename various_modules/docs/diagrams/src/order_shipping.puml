@@ -1,0 +1,53 @@
+@startuml OrderShippingBefore
+!theme crt-amber
+
+
+class Order {
+    - line_items: list[Item]
+    - shipping: str
+    + get_total()
+    + get_total_weight()
+    + set_shipping_type(shipping_type)
+    + get_shipping_cost()
+    + get_shipping_date()
+}
+
+@enduml
+
+@startuml OrderShippingAfter
+!theme crt-amber
+
+class Order {
+    - line_items: list[Item]
+    - shipping: Shipping
+    + get_total()
+    + get_total_weight()
+    + set_shipping_type(shipping)
+    + get_shipping_cost()
+    + get_shipping_date()
+}
+
+interface Shipping {
+    + get_cost(order)
+    + get_date(order)
+}
+
+Order o-> Shipping
+
+class Ground  {
+    ...
+    + get_cost(order)
+    + get_date(order)
+}
+
+class Air {
+    ...
+    + get_cost(order)
+    + get_date(order)
+}
+
+Ground .up.|> Shipping
+Air .up.|> Shipping
+
+
+@enduml
